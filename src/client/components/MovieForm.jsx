@@ -19,9 +19,27 @@ export default function MovieForm({ handleSubmit }) {
 
     return (
         <form onSubmit={handleSubmitDecorator}>
-            <input type='text' name='title' placeholder="Title" value={movie.title} onChange={handleChange} />
-            <input type='text' name='description' placeholder="Description" value={movie.description} onChange={handleChange} />
-            <input type='number' name='runtimeMins' placeholder="Runtime (minutes)" value={movie.runtimeMins} onChange={handleChange} />
+            <input 
+                type='text' 
+                name='title' 
+                placeholder="Title" 
+                value={movie.title} 
+                onChange={handleChange} 
+            />
+            <input 
+                type='text' 
+                name='description' 
+                placeholder="Description" 
+                value={movie.description} 
+                onChange={handleChange} 
+            />
+            <input 
+                type='number' 
+                name='runtimeMins' 
+                placeholder="Runtime (minutes)" 
+                value={movie.runtimeMins} 
+                onChange={handleChange} 
+            />
             <button type="submit">Submit</button>
         </form>
     );
